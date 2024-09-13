@@ -1,12 +1,12 @@
-import Landing from "./sections/Landing"
-import Skills from "./sections/Skills"
+import Landing from "./components/Landing/Landing"
+import Projects from "./components/Projects/Projects"
 
 function App() {
 
   return (
     <div>
       <Landing />
-      <Skills />
+      <Projects />
     </div>
   )
 }

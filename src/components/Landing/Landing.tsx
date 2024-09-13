@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import useMousePosition from '../hooks/useMousePosition';
+import useMousePosition from '../../hooks/useMousePosition';
 import { motion } from 'framer-motion';
-import { Linkedin } from '../icons/linkedIn';
-import { Github } from '../icons/github';
-import { div } from 'framer-motion/client';
+import { Linkedin } from '../../icons/linkedIn';
+import { Github } from '../../icons/github';
 
 const Landing = () => {
     const taleSize = 36; // Width and height of each tale
@@ -39,7 +38,8 @@ const Landing = () => {
 
     return (
         <div>
-            <div className='relative h-screen -mb-24'>
+            <div className='fixed h-screen w-screen bg-bgMain'></div>
+            <div className='relative h-screen -mb-52 '>
                 <div
                     className="fixed flex flex-wrap overflow-hidden"
                     style={{
