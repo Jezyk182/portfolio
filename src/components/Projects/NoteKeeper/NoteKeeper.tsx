@@ -12,7 +12,7 @@ const NoteKeeper = () => {
 
 
     return ( 
-        <div className="w-[30%] sticky top-0">
+        <div className="w-full sm:w-4/5 md:w-2/5 xl:w-2/6">
             <h2 className="text-xl mb-2">Note Keeper</h2>
             <Slider images={sliderImages}/>
         </div>

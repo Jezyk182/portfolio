@@ -1,6 +1,8 @@
 import SocialMedia from "./SocialMedia/SocialMedia";
 import NoteKeeper from "./NoteKeeper/NoteKeeper";
 import HangMan from "./HangMan/HangMan";
+import WeatherApp from "./WeatherApp/WeatherApp";
+import Vowels from "./Vowels/Vowels";
 
 
 const Projects = () => {
@@ -16,15 +18,17 @@ const Projects = () => {
 
     return (
         <div className="w-screen bg-bgMain border-y-4 border-zinc-500/20 z-10 py-24 text-center relative">
-            <h1 className="text-4xl font-bold capitalize">Current Personal Project I am working on</h1>
-            <div className="w-2/3 m-auto mt-12">
+            <h1 className="font-bold capitalize text-2xl sm:text-3xl lg:text-4xl">Current Personal Project I am working on</h1>
+            <div className="container m-auto mt-12 px-2">
                 <div className="flex flex-col gap-12">
                     <SocialMedia />
                 </div>
-                <h2 className="text-3xl font-bold capitalize mt-24 mb-12">Other, smaller personal projects</h2>
-                <div className="flex flex-wrap gap-12 w-full justify-center">
+                <h2 className="font-bold capitalize mt-24 mb-12 text-xl sm:text-2xl lg:text-3xl">Other, smaller personal projects</h2>
+                <div className="flex flex-wrap gap-4 w-full justify-center flex-col items-center md:flex-row lg:gap-10 2xl:gap-12">
                     <HangMan />
                     <NoteKeeper />
+                    <WeatherApp />
+                    <Vowels />
                 </div>
             </div>
         </div>
