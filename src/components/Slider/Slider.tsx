@@ -26,7 +26,7 @@ const Slider: React.FC<props> = ({ images }) => {
         slidesPerView={1}
         >
             {images.map((image, index)  => {
-                return <SwiperSlide><img src={image.img} alt={image.alt} key={index} className="rounded-lg"/></SwiperSlide>
+                return <SwiperSlide key={index}><img src={image.img} alt={image.alt} key={index} className="rounded-lg"/></SwiperSlide>
             })}
         </Swiper>
      );

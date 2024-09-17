@@ -12,20 +12,9 @@ const HangMan = () => {
 
 
     return ( 
-        <div className="flex mt-10 items-center justify-center">
-            <div className="text-left w-1/2 h-auto">
-                <h2 className="text-3xl font-semibold">3. HangMan game</h2>
-                <p className="mt-4 text-lg">Fun Game </p>
-                <p className="mt-1 text-lg">Things I learned during this project:</p>
-                <ol className="list-disc ml-4 mt-1 text-lg">
-                    <li>Manipulating DOM using JS</li>
-                    <li>Cutting string data types</li>
-                    <li>Creating modals</li>
-                </ol>
-            </div>
-            <div className="w-2/5 sticky top-0">
-                <Slider images={sliderImages}/>
-            </div>
+        <div className="w-[30%] sticky top-0">
+            <h2 className="text-xl mb-2">HangMan game</h2>
+            <Slider images={sliderImages}/>
         </div>
      );
 }

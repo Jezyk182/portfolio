@@ -14,7 +14,7 @@ const SocialMedia = () => {
     return ( 
         <div className="flex mt-10 items-center justify-center">
             <div className="text-left w-1/2 h-auto">
-                <h2 className="text-3xl font-semibold">1. Web Posts</h2>
+                <h2 className="text-3xl font-semibold">Web Posts</h2>
                 <p className="mt-4 text-lg">The biggest personal project I am still working on. </p>
                 <p className="mt-1 text-lg">This project contains most things that every functional Post website should have:</p>
                 <ol className="list-disc ml-4 mt-1 text-lg">
