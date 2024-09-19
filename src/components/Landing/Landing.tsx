@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import useMousePosition from '../../hooks/useMousePosition';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, FileCv } from '../../icons/Socials';
+import { Location } from '../../icons/Assets';
 import pdf from "./CV.pdf"
 
 const Landing = () => {
@@ -118,7 +119,7 @@ const Landing = () => {
                 {/* <div className="font-semibold flex gap-10 items-center w-screen h-screen z-50 relative -top-[10%] justify-center flex-wrap text-center"> */}
                 <div className="font-semibold flex gap-0 items-center w-screen h-screen z-50 -top-[10%] relative justify-center flex-wrap text-center md:flex-col md:gap-10 lg:flex-row lg:text-left xl:gap-24 2xl:gap-36">
                     <img src="./prof.jpg" alt="" className="w-80 rounded-lg shadow-2xl my-0" />
-                    <div>
+                    <div className='relative'>
                         <p>Hi there! I'm</p>
                         <h1 className="text-5xl md:text-7xl">
                             Patryk <span className="bg-gradient-to-r from-purple-100 to-purple-700 text-transparent bg-clip-text">Plekaniec</span>
@@ -126,18 +127,11 @@ const Landing = () => {
                         <p className="text-md mt-4 font-light w-2/3 mx-auto text-center md:text-lg lg:text-left lg:w-auto">
                             A{' '}
                             <span className="underline decoration-2 decoration-purple-600 font-normal">
-                                Junior Front-End Developer
+                                Front-End Developer
                             </span>{' '}
                             who is ready to <br /> work on exciting web applications using modern technologies.
                         </p>
                         <div className="mt-4 flex gap-4 justify-center lg:justify-start">
-                            <a
-                                href="https://www.linkedin.com/in/patryk-plekaniec/"
-                                className="w-8 h-8 inline-block transition-colors duration-200 fill-sky-400 hover:fill-sky-600"
-                                target="_blank"
-                            >
-                                <Linkedin />
-                            </a>
                             <a
                                 href="https://github.com/Jezyk182"
                                 target="_blank"
@@ -153,12 +147,23 @@ const Landing = () => {
                                 <Mail />
                             </a>
                             <a
+                                href="https://www.linkedin.com/in/patryk-plekaniec/"
+                                className="w-8 h-8 inline-block transition-colors duration-200 fill-sky-400 hover:fill-sky-600"
+                                target="_blank"
+                            >
+                                <Linkedin />
+                            </a>
+                            <a
                                 href={pdf}
                                 target="_blank"
                                 className="w-8 h-8 inline-block transition-colors duration-200 stroke-green-400 hover:stroke-green-600"
                             >
                                 <FileCv />
                             </a>
+                        </div>
+                        <div className='flex items-center justify-center absolute -bottom-10 left-0 right-0 gap-1 fill-red-500 lg:top-0 lg:bottom-auto lg:right-0 lg:left-auto'>
+                            <Location />
+                            <p className='text-sm'>Poland, <span className='text-neutral-300'>Silesia</span></p>
                         </div>
                     </div>
                 </div>

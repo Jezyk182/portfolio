@@ -18,12 +18,12 @@ const Projects = () => {
 
     return (
         <div className="w-screen bg-bgMain border-y-4 border-zinc-500/20 z-10 py-24 text-center relative">
-            <h1 className="font-bold capitalize text-2xl sm:text-3xl lg:text-4xl">Current Personal Project I am working on</h1>
+            <h1 className="font-bold capitalize text-2xl sm:text-3xl lg:text-4xl">Projects</h1>
             <div className="container m-auto mt-12 px-2">
                 <div className="flex flex-col gap-12">
                     <SocialMedia />
                 </div>
-                <h2 className="font-bold capitalize mt-24 mb-12 text-xl sm:text-2xl lg:text-3xl">Other, smaller personal projects</h2>
+                <hr className="font-bold capitalize mt-24 mb-12 text-xl sm:text-2xl lg:text-3xl" />
                 <div className="flex flex-wrap gap-4 w-full justify-center flex-col items-center md:flex-row lg:gap-10 2xl:gap-12">
                     <HangMan />
                     <NoteKeeper />

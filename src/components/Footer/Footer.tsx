@@ -6,7 +6,7 @@ const Footer = () => {
     const year = d.getFullYear()
 
     return ( 
-        <div className="w-screen bg-bgMain border-y-4 border-zinc-500/20 z-10 py-8 text-center relative">
+        <div className="w-screen bg-bgMain z-10 py-8 text-center relative">
             <div className="flex gap-4 justify-center">
                 <a
                     href="https://www.linkedin.com/in/patryk-plekaniec/"
