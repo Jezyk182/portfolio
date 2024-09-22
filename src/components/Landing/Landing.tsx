@@ -127,7 +127,7 @@ const Landing = () => {
                         <p className="text-md mt-4 font-light w-2/3 mx-auto text-center md:text-lg lg:text-left lg:w-auto">
                             A{' '}
                             <span className="underline decoration-2 decoration-purple-600 font-normal">
-                                Front-End Developer
+                                Full Stack Web Developer
                             </span>{' '}
                             who is ready to <br /> work on exciting web applications using modern technologies.
                         </p>
